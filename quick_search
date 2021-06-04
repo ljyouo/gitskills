@@ -1,9 +1,20 @@
 In fact, Git stores everything in its database not by file name but by the hash value of its contents.
 
-You can view all of your settings and where they are coming from using:
-$ git config --list --show-origin
+configuration
+$ git config --list --show-origin //You can view all of your settings and where they are coming from using
+$ git config --list  //Checking Your Settings 
 
 Identity
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 you need to do this only once if you pass the --global option, because then Git will always use that information for anything you do on that system. If you want to override this with a different name or email address for specific projects, you can run the command without the --global option when you’re in that project.
+
+Editor //编辑器
+$ git config --global core.editor editor_name_or_windows_path
+
+Getting Help
+$ git help <verb>         //eg. $git help config
+$ git <verb> --help
+$ man git-<verb>
+quick refresher : -h
+eg. $git add -h
