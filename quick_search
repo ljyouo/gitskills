@@ -4,6 +4,13 @@ configuration
 $ git config --list --show-origin //You can view all of your settings and where they are coming from using
 $ git config --list  //Checking Your Settings 
 
+Getting Help
+$ git help <verb>         //eg. $git help config
+$ git <verb> --help
+$ man git-<verb>
+quick refresher : -h
+eg. $git add -h
+
 Identity
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
@@ -12,9 +19,13 @@ you need to do this only once if you pass the --global option, because then Git 
 Editor //编辑器
 $ git config --global core.editor editor_name_or_windows_path
 
-Getting Help
-$ git help <verb>         //eg. $git help config
-$ git <verb> --help
-$ man git-<verb>
-quick refresher : -h
-eg. $git add -h
+Initializing a Repository in an Existing Directory:
+$ cd C:/Users/user/my_project    //切到目录
+$ git init                       //This creates a new subdirectory named .git
+$ git add *.c
+$ git add LICENSE
+$ git commit -m 'Initial project version'
+
+Cloning an Existing Repository
+$ git clone https://github.com/libgit2/libgit2
+
