@@ -1,0 +1,4 @@
+In fact, Git stores everything in its database not by file name but by the hash value of its contents.
+
+You can view all of your settings and where they are coming from using:
+$ git config --list --show-origin
