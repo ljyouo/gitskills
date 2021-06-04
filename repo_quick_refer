@@ -1,0 +1,11 @@
+https://blog.csdn.net/nwpushuai/article/details/78778602
+
+①
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$ chmod a+x ~/bin/repo
+
+②
+$ mkdir ~/bin
+$ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$ chmod a+x ~/bin/repo
+$ PATH=${PATH}:~/bin
