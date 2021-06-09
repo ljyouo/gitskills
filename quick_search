@@ -27,5 +27,24 @@ $ git add LICENSE
 $ git commit -m 'Initial project version'
 
 Cloning an Existing Repository
-$ git clone https://github.com/libgit2/libgit2
+$ git clone https://github.com/libgit2/libgit2  
+$ git clone https://github.com/libgit2/libgit2 target_directory
 
+Checking the Status of Your Files
+$ git status
+$ git status -s //省略性输出，或者写成 git status --short
+$ git diff
+$ git diff --cached
+
+Ignoring Files
+编辑 .gitignore    //$ cat .gitignore , 正则格式, 语法：https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+
+Skipping the Staging Area
+$ git commit -a    //可省略敲 git add的步骤，将之前tracking过的文件改动都commit
+
+remove file from tracked files
+$ git rm                   //举例 $ git rm \*~  或者 $ git rm log/\*.log   (\是有必要的)
+$ git rm --cached README   //从整个git移除
+
+Moving Files （rename）
+$ git mv file_from file_to
