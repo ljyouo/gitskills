@@ -48,3 +48,20 @@ $ git rm --cached README   //从整个git移除
 
 Moving Files （rename）
 $ git mv file_from file_to
+
+Viewing the Commit History
+参数列表 https://www.git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+$ git log         //-p or --patch, shows the difference, You can also limit the number of log entries displayed, such as using -2 to show only the last two entries.
+
+Undoing Things
+$ git commit -m 'Initial commit'
+$ git add forgotten_file
+$ git commit --amend
+
+use "git reset HEAD <file>..." to unstage
+use "git checkout -- <file>..." to discard changes in working directory
+use "git restore --staged <file>..." to unstage
+use "git restore <file>..." to discard changes in working directory
+
+
+
