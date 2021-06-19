@@ -63,5 +63,27 @@ use "git checkout -- <file>..." to discard changes in working directory
 use "git restore --staged <file>..." to unstage
 use "git restore <file>..." to discard changes in working directory
 
+Adding Remote Repositories
+$ git remote
+origin
+$ git remote add pb https://github.com/paulboone/ticgit
+$ git remote -v
+origin	https://github.com/schacon/ticgit (fetch)
+origin	https://github.com/schacon/ticgit (push)
+pb	https://github.com/paulboone/ticgit (fetch)
+pb	https://github.com/paulboone/ticgit (push)
 
+$ git fetch pb
+remote: Counting objects: 43, done.
+remote: Compressing objects: 100% (36/36), done.
+
+Pushing to Your Remotes
+$git push <remote> <branch>
+
+Inspecting a Remote
+$git remote show <remote>
+
+Renaming and Removing Remotes
+$git remote rename pb paul
+$git remote remove paul
 
