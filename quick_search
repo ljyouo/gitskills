@@ -97,3 +97,7 @@ $ git push <remote> :refs/tags/<tagname>        //remove the tag from remote ser
 $ git push origin --delete <tagname>            //remove the tag from remote servers
 $ git checkout v2.0.0             //Checking out Tags
 
+
+Aliases
+$ git config --global alias.ci commit       //git commit == git ci
+$ git config --global alias.visual '!gitk'
